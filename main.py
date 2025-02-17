@@ -4,10 +4,10 @@ from sklearn.ensemble import IsolationForest
 import joblib
 
 # Paramètres de la simulation
-n_samples = 1000
-normal_variation = 10  # Variation normale autour de 10mA
-anomaly_variation = 200  # Variation anormale (trop grande)
-seuil_variation = 50  # Seuil au-delà duquel on considère la variation comme anormale
+n_samples = 100000
+normal_variation = 100  # Variation normale autour de 10mA
+anomaly_variation = 500  # Variation anormale (trop grande)
+seuil_variation = 150  # Seuil au-delà duquel on considère la variation comme anormale
 
 # Générer les données
 np.random.seed(42)
